@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="../builds/capital-0.1.min.js"></script>
+		<style type="text/css">
+		
+			h1, p {
+				margin: 0;
+				padding: 0;
+			}
+		
+			div.main {
+				width: 960px;
+				margin: auto;
+			}
+			div.article {
+				margin-bottom: 20px;
+				font-family: georgia;
+			}
+			
+			div.article h1 {
+				margin-bottom: 10px;
+			}
+			
+			div.article p {
+				text-align: justify;
+			}
+			
+			div.article p span.capital-letter {
+				/*Custom capital stuff here, like changing font-family*/
+			}
+
+			/* Font Blocks */
+			
+			div.article.type-1  { font-size: 32px; }	
+			div.article.type-2  { font-size: 26px; } 
+			div.article.type-3  { font-size: 18px; }	
+			div.article.type-4  { font-size: 12px; }	
+			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+
+			<select id="font-selector">
+				<option value='georgia'>Georgia</option>
+				<option value='arial'>Arial</option>
+				<option value='verdana'>Verdana</option>
+				<option value='futura'>Futura</option>
+				<option value='helvetica'>Helvetica</option>
+				<option value='"Century Schoolbook L"'>Century Schoolbook L</option>
+			</select>
+			
+			<div class='article type-1'>
+				<h1>Post Title</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+			<div class='article  type-2'>
+				<h1>Post Title</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			
+			<div class='article type-3'>
+				<h1>Post Title</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			
+			<div class='article  type-4'>
+				<h1>Post Title</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#font-selector").change(function(){
+					$("div.article").css('font-family', $(this).attr('value'));
+				})
+				$('div.article >  p').CapitalLetter({'color': '#02AD08'});
+			});
+		</script>
+	</body>
+</html>
