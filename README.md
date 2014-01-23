@@ -3,6 +3,8 @@ Capital Letter
 
 A simple, lightweight jQuery plugin for creating **awesome** Capital Letters
 
+[Working exaple here] (http://the5thfinger.tumblr.com/demos/capital)
+
 ### Installation
 
 Include script *after* the jQuery library (unless you are packaging scripts somehow else):
