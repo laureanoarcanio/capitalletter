@@ -32,3 +32,7 @@ You can pass in any CSS you like to be applied to the capital letter
 ```javascript
 	$('p').CapitalLetter({color: "#02AD08"});
 ```
+
+### Authors
+
+[Laureano Arcanio] (https://github.com/laureanoarcanio)
