@@ -1,7 +1,7 @@
 Capital Letter
 ==============
 
-## A simple, lightweight jQuery plugin for creating **awesome** Capital Letters
+A simple, lightweight jQuery plugin for creating **awesome** Capital Letters
 
 ### Installation
 
