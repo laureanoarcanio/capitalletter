@@ -3,7 +3,7 @@ Capital Letter
 
 A simple, lightweight jQuery plugin for creating **awesome** Capital Letters
 
-[Working exaple here] (http://the5thfinger.tumblr.com/demos/capital)
+[Working exaple here] (http://arcanio.com.ar/share/capital/sample/index.html)
 
 ### Installation
 
