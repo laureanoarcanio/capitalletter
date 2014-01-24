@@ -3,7 +3,16 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 		<script type="text/javascript" src="../builds/capital-0.1.min.js"></script>
 		<style type="text/css">
-		
+			@font-face {
+			    font-family: 'kaushan_scriptregular';
+			    src: url('webfont/kaushanscript-regular-webfont.eot');
+			    src: url('webfont/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('webfont/kaushanscript-regular-webfont.woff') format('woff'),
+			         url('webfont/kaushanscript-regular-webfont.ttf') format('truetype'),
+			         url('webfont/kaushanscript-regular-webfont.svg#kaushan_scriptregular') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+			}
 			h1, p {
 				margin: 0;
 				padding: 0;
@@ -15,7 +24,6 @@
 			}
 			div.article {
 				margin-bottom: 20px;
-				font-family: georgia;
 			}
 			
 			div.article h1 {
@@ -24,6 +32,7 @@
 			
 			div.article p {
 				text-align: justify;
+				line-height: 120%;
 			}
 			
 			div.article p span.capital-letter {
@@ -35,13 +44,12 @@
 			div.article.type-1  { font-size: 32px; }	
 			div.article.type-2  { font-size: 26px; } 
 			div.article.type-3  { font-size: 18px; }	
-			div.article.type-4  { font-size: 12px; }	
-			
+			div.article.type-4  { font-size: 12px; }
 		</style>
 	</head>
 	<body>
 		<div class="main">
-
+			<label>Font Family:</label>
 			<select id="font-selector">
 				<option value='georgia'>Georgia</option>
 				<option value='arial'>Arial</option>
@@ -52,8 +60,8 @@
 			</select>
 			
 			<div class='article type-1'>
-				<h1>Post Title</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h1>Capiral Letter jQuery plugin</h1>
+				<p>This plugin allows you to add Capital Letters to any text in the page, it's easy to use and customize. This examples uses a webfont for the capital letter so it looks much nicer.</p>
 			</div>
 
 			<div class='article  type-2'>
@@ -63,21 +71,25 @@
 			
 			<div class='article type-3'>
 				<h1>Post Title</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 			
 			<div class='article  type-4'>
 				<h1>Post Title</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p>Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 			</div>
 
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$("#font-selector").change(function(){
-					$("div.article").css('font-family', $(this).attr('value'));
+					$("body").css('font-family', $(this).attr('value'));
 				})
-				$('div.article >  p').CapitalLetter({'color': '#02AD08'});
+				$('div.article >  p').CapitalLetter({
+					'color': '#02AD08',
+					'font-family': 'kaushan_scriptregular',
+					'margin-right': '0.3em'
+				});
 			});
 		</script>
 	</body>
