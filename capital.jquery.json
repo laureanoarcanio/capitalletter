@@ -1,0 +1,32 @@
+{
+    "name": "capital",
+    "title": "jQuery Capital Letter",
+    "description": "A simple, lightweight jQuery plugin for creating awesome Capital Letters.",
+    "keywords": [
+        "capital",
+        "letter",
+        "capitalize"
+    ],
+    "version": "0.1.0",
+    "author": {
+        "name": "Laureano Arcanio",
+        "url": "https://github.com/laureanoarcanio"
+    },
+    "maintainers": [
+        {
+            "name": "Laureano Arcanio"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/laureanoarcanio/capitalletter/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/laureanoarcanio/capitalletter/issues",
+    "homepage": "https://github.com/laureanoarcanio/capitalletter",
+    "docs": "https://github.com/laureanoarcanio/capitalletter",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
