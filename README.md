@@ -10,7 +10,7 @@ A simple, lightweight jQuery plugin for creating **awesome** Capital Letters
 Include script *after* the jQuery library (unless you are packaging scripts somehow else):
 
 ```html
-<script src="/path/to/jquery.capital.js"></script>
+<script src="/path/to/capital.min.js"></script>
 ```
 
 **Do not include the script directly from GitHub (http://raw.github.com/...).** The file is being served as text/plain and as such being blocked
